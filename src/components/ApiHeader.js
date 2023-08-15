@@ -8,7 +8,6 @@ const ApiHeader = () => {
         <Link href="/" className="text-yellow-400 text-lg font-bold">
           Back To Home Page
         </Link>
-
         <Link href="/simpleApi/users" className="text-white text-lg font-bold">
           Users
         </Link>
