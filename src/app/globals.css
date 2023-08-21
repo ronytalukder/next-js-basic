@@ -16,3 +16,97 @@
   }
 }
 
+/* pricing start$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+
+
+.plan-card {
+  @apply bg-white w-full pl-[2rem] pr-[2rem] pt-3 pb-5 rounded-[10px] border-b-[4px] border-[#00334e] shadow-[0_3px_10px_rgb(0,0,0,0.2)];
+}
+
+.plan-card h2 {
+  @apply mb-[15px] text-[27px] font-medium text-[#00334e];
+}
+
+.plan-card h2 span {
+  @apply text-[12px] font-medium block text-[#4d4d4d] mt-[-4px] ;
+}
+
+.etiquet-price {
+  @apply relative bg-[#ff9900] w-[117%] ml-[-0.65rem]  px-[1.2rem] py-[.2rem] rounded-l-[5px];
+}
+
+.etiquet-price p {
+  margin: 0;
+  padding-top: .4rem;
+  display: flex;
+  font-size: 1.9rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+.etiquet-price p:before {
+  content: "$";
+  margin-right: 5px;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.etiquet-price p:after {
+  content: " / only";
+  margin-left: 5px;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.etiquet-price div {
+  @apply absolute bottom-[-23px] right-[0] w-[0] h-[0] border-t-[13px] border-t-[#ea910c] border-b-[10px] border-b-transparent border-r-[13px] border-r-transparent z-[-6]; 
+
+}
+
+.benefits-list {
+  @apply mt-[16px];
+}
+
+.benefits-list ul {
+   @apply p-0 text-[14px];
+}
+
+.benefits-list ul li {
+  @apply list-none flex items-center gap-[.5rem] my-5;
+}
+
+.benefits-list ul li svg {
+  @apply w-[20px] h-[20px] fill-[#ea910c];
+}
+
+.benefits-list ul li span {
+  @apply font-normal text-base text-[#00334e];
+}
+
+.button-get-plan {
+  @apply flex justify-center mt-[1.2rem];
+}
+
+
+.button-get-plan a {
+  @apply flex justify-center w-full items-center bg-[#00334e] text-white py-3  rounded font-medium text-base tracking-wide transition-all duration-300 ;
+}
+
+.button-get-plan a:hover {
+  @apply transform -translate-y-[3px] hover:shadow-md text-[#ff9900] ;
+}
+
+.button-get-plan svg {
+  @apply mr-[10px] w-[.9rem] fill-[#fff];
+}
+.button-get-plan a:hover svg {
+  @apply mr-[10px] w-[.9rem] fill-[#ff9900];
+}
+/* pricing end $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+
+
+
+/* login >>>>>>>>>>>>>>>>>>>>>>>>>>>>>start */
+
+
+/* login >>>>>>>>>>>>>>>>>>>>>>>>>>>>>end */
