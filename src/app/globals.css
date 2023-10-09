@@ -104,9 +104,8 @@
 }
 /* pricing end $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
 
-
-
 /* about >>>>>>>>>>>>>>>>>>>>>>>>>>>>>start */
+
 .book {
   position: relative;
   border-radius: 10px;
@@ -120,7 +119,7 @@
   transform: preserve-3d;
   -webkit-perspective: 2000px;
   perspective: 2000px;
-  display: -webkit-box;
+   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
@@ -128,14 +127,18 @@
   align-items: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center;
+  justify-content: center; 
   color: #000;
 }
 
 .cover {
   top: 0;
   position: absolute;
-   background-color: #00334e;
+  /* background-color: yellow; */
+  background:url('https://raw.githubusercontent.com/eliasbhuiyan/Bookpattern-front/main/public/latest/book27.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   width: 100%;
   height: 100%;
   border-radius: 10px;
@@ -155,7 +158,7 @@
   align-items: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
 .about:hover .cover {
@@ -171,141 +174,23 @@
   font-weight: bolder;
 }
 
-/* about innter button start */
-.button_v_3,
-.button_v_3 *,
-.button_v_3 :after,
-.button_v_3 :before,
-.button_v_3:after,
-.button_v_3:before {
-  border: 0 solid;
-  box-sizing: border-box;
+.book:nth-child(2) .cover {
+  background:url("https://raw.githubusercontent.com/eliasbhuiyan/Bookpattern-front/main/public/latest/book25.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.book:nth-child(3) .cover {
+  background:url("https://raw.githubusercontent.com/eliasbhuiyan/Bookpattern-front/main/public/latest/book24.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
-.button_v_3 {
-  -webkit-tap-highlight-color: transparent;
-  -webkit-appearance: button;
-  background-color: #000;
-  background-image: none;
-  color: #fff;
-  cursor: pointer;
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
-    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
-    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
-  font-size: 100%;
-  font-weight: 900;
-  line-height: 1.5;
-  margin: 0;
-  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
-  padding: 0;
-}
 
-.button_v_3:disabled {
-  cursor: default;
-}
 
-.button_v_3:-moz-focusring {
-  outline: auto;
-}
+box-shadow: 5px 5px 0px 0px rgba(109,40,217);
 
-.button_v_3 svg {
-  display: block;
-  vertical-align: middle;
-}
 
-.button_v_3 [hidden] {
-  display: none;
-}
-
-.button_v_3 {
-  border-width: 1px;
-  padding: 5px 15px;
-  position: relative;
-  text-transform: uppercase;
-  left: 10px;
-}
-
-.button_v_3:before {
-  --progress: 100%;
-  background: #fff;
-  -webkit-clip-path: polygon(
-    100% 0,
-    var(--progress) var(--progress),
-    0 100%,
-    100% 100%
-  );
-  clip-path: polygon(
-    100% 0,
-    var(--progress) var(--progress),
-    0 100%,
-    100% 100%
-  );
-  content: "";
-  inset: 0;
-  position: absolute;
-  transition: -webkit-clip-path 0.2s ease;
-  transition: clip-path 0.2s ease;
-  transition: clip-path 0.2s ease, -webkit-clip-path 0.2s ease;
-}
-
-.button_v_3:hover:before {
-  --progress: 0%;
-}
-
-.button_v_3 .text-container {
-  display: block;
-  overflow: hidden;
-  position: relative;
-}
-
-.button_v_3 .text {
-  display: block;
-  font-weight: 400;
-  mix-blend-mode: difference;
-  position: relative;
-}
-
-.button_v_3:hover .text {
-  -webkit-animation: move-up-alternate 0.3s ease forwards;
-  animation: move-up-alternate 0.3s ease forwards;
-}
-
-@-webkit-keyframes move-up-alternate {
-  0% {
-    transform: translateY(0);
-  }
-
-  50% {
-    transform: translateY(80%);
-  }
-
-  51% {
-    transform: translateY(-80%);
-  }
-
-  to {
-    transform: translateY(0);
-  }
-}
-
-@keyframes move-up-alternate {
-  0% {
-    transform: translateY(0);
-  }
-
-  50% {
-    transform: translateY(80%);
-  }
-
-  51% {
-    transform: translateY(-80%);
-  }
-
-  to {
-    transform: translateY(0);
-  }
-}
-
-/* about innter button end */
 
 /* about >>>>>>>>>>>>>>>>>>>>>>>>>>>>>end */
