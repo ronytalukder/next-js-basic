@@ -1,4 +1,8 @@
+"use client";
+import { LottiePlayer } from "@lottiefiles/lottie-player";
 import React from "react";
+import Lottie from "lottie-react";
+import Ani from "../../../public/animation/animi.json";
 
 const Page = () => {
   return (
@@ -62,15 +66,29 @@ const Page = () => {
       <section className="py-[100px]">
         <div className="container px-2 lg-px:0 mx-auto ">
           <div className="mb-20">
-        <h2 className=" text-4xl mb-5 font-bold text-[#00334e] text-center">Our Mission</h2>
-        <p className="text-base font-normal text-center">Our mission is really simple and straightforward. We work hard to design your print or e-book in a way that will make you proud as well as engage more potential readers and increase book sales.</p>
+            <h2 className=" text-4xl mb-5 font-bold text-[#00334e] text-center">
+              Our Mission
+            </h2>
+            <p className="text-base font-normal text-center w-full md:w-[80%] lg:w-[70%] mx-auto">
+              Our mission is really simple and straightforward. We work hard to
+              design your print or e-book in a way that will make you proud as
+              well as engage more potential readers and increase book sales.
+            </p>
           </div>
-          <div className="flex justify-between flex-wrap "> 
+
+          <div className="flex justify-between flex-wrap ">
             <div className="w-full mb-6 lg:mb-0 lg:w-[31%] text-center rounded-lg p-9 shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
-           <h2 className="text-2xl font-bold mb-3 text-[#00334e]">Crafting Beautiful Books</h2>
-            <p className="text-base">Our professional designers are changing the way your books are visible to the readers and published.</p>
+            <Lottie className="h-[200px]" animationData={Ani} />
+              <h2 className="text-2xl font-bold mb-3 text-[#00334e]">
+                Crafting Beautiful Books
+              </h2>
+              <p className="text-base">
+                Our professional designers are changing the way your books are
+                visible to the readers and published.
+              </p>
             </div>
           </div>
+          
         </div>
       </section>
     </div>

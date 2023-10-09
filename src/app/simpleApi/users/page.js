@@ -14,6 +14,8 @@ const page = async () => {
   //   console.log(data);
   // call API----------server Side Rendering--------->>>> end --->>>
 
+
+  
   return (
     <div className="container mx-auto">
       <div className="flex justify-between">
