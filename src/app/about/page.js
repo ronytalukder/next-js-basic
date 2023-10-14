@@ -2,7 +2,10 @@
 import { LottiePlayer } from "@lottiefiles/lottie-player";
 import React from "react";
 import Lottie from "lottie-react";
-import Ani from "../../../public/animation/animi.json";
+import Ani from "../../../public/animation/beautifulBooks.json";
+import Creativity from "../../../public/animation/creativity.json";
+import SelfPublishers from "../../../public/animation/selfPublishers.json";
+
 
 const Page = () => {
   return (
@@ -76,9 +79,9 @@ const Page = () => {
             </p>
           </div>
 
-          <div className="flex justify-between flex-wrap ">
-            <div className="w-full mb-6 lg:mb-0 lg:w-[31%] text-center rounded-lg p-9 shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
-            <Lottie className="h-[200px]" animationData={Ani} />
+          <div className="flex md:justify-center gap-0 md:gap-8 lg:gap-0 lg:justify-between flex-wrap ">
+            <div className="w-full mb-6 md:mb-0 md:w-[45%] lg:mb-0 lg:w-[31%] text-center rounded-lg p-9 shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
+              <Lottie className="h-[200px]" animationData={Ani} />
               <h2 className="text-2xl font-bold mb-3 text-[#00334e]">
                 Crafting Beautiful Books
               </h2>
@@ -87,10 +90,33 @@ const Page = () => {
                 visible to the readers and published.
               </p>
             </div>
+
+            <div className="w-full mb-6 md:mb-0 md:w-[45%] lg:mb-0 lg:w-[31%] text-center rounded-lg p-9 shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
+              <Lottie className="h-[200px]" animationData={Creativity} />
+              <h2 className="text-2xl font-bold mb-3 text-[#00334e]">
+                Ensure Quality & Creativity
+              </h2>
+              <p className="text-base">
+                We make sure our top-notch quality services are perfectly suited
+                to your genre and budget.
+              </p>
+            </div>
+
+            <div className="w-full mb-6 md:mb-0 md:w-[45%] lg:mb-0 lg:w-[31%] text-center rounded-lg p-9 shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
+              <Lottie className="h-[200px]" animationData={SelfPublishers} />
+              <h2 className="text-2xl font-bold mb-3 text-[#00334e]">
+                Help Self Publishers Go Global
+              </h2>
+              <p className="text-base">
+                BookPattern helps self-publishers to share their stories and
+                ideas with the world through our designs.
+              </p>
+            </div>
           </div>
-          
         </div>
       </section>
+
+     
     </div>
   );
 };
