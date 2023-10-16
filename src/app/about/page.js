@@ -1,19 +1,30 @@
 "use client";
 import { LottiePlayer } from "@lottiefiles/lottie-player";
-import React from "react";
+import React, { useEffect } from "react";
 import Lottie from "lottie-react";
 import Ani from "../../../public/animation/beautifulBooks.json";
 import Creativity from "../../../public/animation/creativity.json";
 import SelfPublishers from "../../../public/animation/selfPublishers.json";
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+
 
 const Page = () => {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, 
+    });
+  }, []);
+
   return (
     <div>
       <section className="about bg-blue-200 pt-14 pb-16 lg:pt-20 lg:pb-24">
         <div className="container px-5 2xl:px-0 mx-auto">
           <div className="flex justify-between items-center flex-wrap">
-            <div className=" w-full md:w-[50%] lg:w-[45%]">
+            <div data-aos="zoom-in-up" className=" w-full md:w-[50%] lg:w-[45%]">
               <h2 className=" text-4xl mb-5 font-bold text-[#00334e]">
                 What Makes Us Different?
               </h2>
@@ -33,7 +44,7 @@ const Page = () => {
               </p>
             </div>
 
-            <div className="hidden md:flex w-[50%] pr-0 2xl:pr-[250px]  flex-wrap gap-[35px] lg:gap-[60px] justify-center">
+            <div data-aos="zoom-in-up" className="hidden md:flex w-[50%] pr-0 2xl:pr-[250px]  flex-wrap gap-[35px] lg:gap-[60px] justify-center">
               <div class="book">
                 <div className="pl-10 ">
                   <h2 className="text-3xl text-orange-500 mb-2 font-medium">
@@ -116,7 +127,41 @@ const Page = () => {
         </div>
       </section>
 
-     
+      <section  className="mb-[200px] book_readers">
+        <div data-aos="fade-left" className="container mx-auto bg-[#00334e] p-14 rounded-lg flex flex-wrap items-center ">
+          <div className=" w-full md:w-[70%]">
+            {/* <h1 className="text-3xl font-bold mb-3 text-white">
+              Let Your Readers Judge Your Book By Its Cover.
+            </h1> */}
+            <h1 class="text-2xl lg:text-[40px] font-bold mb-3 relative text-white">
+            <span class="bg-clip-text text-transparent bg-gradient-to-r from-[#ffdb3b] via-[#ff9900] to-red-500">
+              Let Your Readers Judge Your Book By Its Cover.
+            </span>
+          </h1>
+            <p className="text-white">
+              Contact us if you want your book to break the competition with an
+              outstanding cover and layout or if you want your book to rule
+              online with an e-book version.
+            </p>
+          </div>
+          <div className="w-full md:w-[30%] flex mt-2 lg:mt-0 justify-start lg:justify-end">
+            {/* <button>hudai</button> */}
+            <button type="button" class="contact-button">
+              <strong>Contact Now</strong>
+              <div id="container-stars">
+                <div id="stars"></div>
+              </div>
+
+              <div id="glow">
+                <div class="circle"></div>
+                <div class="circle"></div>
+              </div>
+            </button>
+          </div>
+        </div>
+      </section>
+
+
     </div>
   );
 };
